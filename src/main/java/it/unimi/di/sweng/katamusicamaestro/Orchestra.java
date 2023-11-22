@@ -18,7 +18,10 @@ public class Orchestra implements MusicalInstrument {
             sb.append(instrument.play());
             sb.append('\n');
         }
-        sb.deleteCharAt(sb.length()-1);
+        if(!sb.isEmpty()){
+            sb.deleteCharAt(sb.length()-1);
+        }
         return sb.toString();
     }
+
 }

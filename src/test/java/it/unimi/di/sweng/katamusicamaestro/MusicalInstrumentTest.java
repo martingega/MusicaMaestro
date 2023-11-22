@@ -59,4 +59,10 @@ public class MusicalInstrumentTest {
         assertThat(SUT.play()).isEqualTo("pepepe\npapapa\ntatang");
     }
 
+    @Test
+    void testOrchestraVuota(){
+        Orchestra SUT = new Orchestra();
+        assertThat(SUT.play()).isEqualTo("");
+    }
+
 }
