@@ -1,6 +1,10 @@
 package it.unimi.di.sweng.katamusicamaestro;
 
+import org.jetbrains.annotations.NotNull;
+
 public class GermanPercussionMusicalInstrument implements MusicalInstrument {
+
+    // Realizza un OBJECT ADAPTER
 
     private final GermanPercussion germanPercussion;
     public GermanPercussionMusicalInstrument(GermanPercussion germanPercussion) {
@@ -8,7 +12,8 @@ public class GermanPercussionMusicalInstrument implements MusicalInstrument {
     }
 
     @Override
-    public String play() {
+    public @NotNull String play() {
         return germanPercussion.spiel();
     }
+
 }

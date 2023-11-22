@@ -1,5 +1,7 @@
 package it.unimi.di.sweng.katamusicamaestro;
 
+import org.jetbrains.annotations.NotNull;
+
 public interface MusicalInstrument {
-    String play();
+    @NotNull String play();
 }
