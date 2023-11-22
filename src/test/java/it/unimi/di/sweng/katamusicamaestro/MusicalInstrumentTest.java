@@ -65,4 +65,15 @@ public class MusicalInstrumentTest {
         assertThat(SUT.play()).isEqualTo("");
     }
 
+    @Test
+    void testOrchestraDiOrchestra(){
+        Orchestra SUT = new Orchestra();
+        Orchestra other = new Orchestra();
+        SUT.add(new Horn());
+        other.add(new Trumpet());
+        other.add(new WaterGlassMusicalInstrument());
+        SUT.add(other);
+        assertThat(SUT.play()).isEqualTo("papapa\npepepe\ndiding");
+    }
+
 }
