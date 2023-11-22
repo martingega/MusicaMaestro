@@ -23,4 +23,10 @@ public class MusicalInstrumentTest {
         assertThat(SUT.tap()).isEqualTo("diding");
     }
 
+    @Test
+    void testIronRod(){
+        GermanPercussion SUT = new IronRod();
+        assertThat(SUT.spiel()).isEqualTo("tatang");
+    }
+
 }
