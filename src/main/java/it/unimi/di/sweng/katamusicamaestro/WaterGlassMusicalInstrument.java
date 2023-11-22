@@ -4,6 +4,6 @@ public class WaterGlassMusicalInstrument extends WaterGlass implements MusicalIn
 
     @Override
     public String play() {
-        return tap();
+        return tap();  // oppure super.tap()
     }
 }
