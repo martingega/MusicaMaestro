@@ -41,4 +41,22 @@ public class MusicalInstrumentTest {
         assertThat(SUT.play()).isEqualTo("tatang");
     }
 
+    // testAddInOrchestra non fatto perché ritenuto più semplice e costoso (debito tecnico) da testare
+
+    @Test
+    void testOrchestra(){
+
+        MusicalInstrument i1 = new Trumpet();
+        MusicalInstrument i2 = new Horn();
+        MusicalInstrument i3 = new GermanPercussionMusicalInstrument(new IronRod());
+
+        Orchestra SUT = new Orchestra();
+
+        SUT.add(i1);
+        SUT.add(i2);
+        SUT.add(i3);
+
+        assertThat(SUT.play()).isEqualTo("pepepe\npapapa\ntatang");
+    }
+
 }
