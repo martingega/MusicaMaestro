@@ -11,4 +11,10 @@ public class MusicalInstrumentTest {
         assertThat(SUT.play()).isEqualTo("pepepe");
     }
 
+    @Test
+    void testHorn(){
+        MusicalInstrument SUT = new Horn();
+        assertThat(SUT.play()).isEqualTo("papapa");
+    }
+
 }
