@@ -29,4 +29,9 @@ public class MusicalInstrumentTest {
         assertThat(SUT.spiel()).isEqualTo("tatang");
     }
 
+    @Test
+    void testWaterGlassMusicalInstruments(){
+        MusicalInstrument SUT = new WaterGlassMusicalInstrument();
+        assertThat(SUT.play()).isEqualTo("diding");
+    }
 }
