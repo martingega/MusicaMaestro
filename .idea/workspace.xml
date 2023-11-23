@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="merged the branch compositePattern">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/HighVolumeMusicalInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="implementato highVolumeInstrument">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/SlowTempoMusicalInstrument.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +17,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,6 +110,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MusicalInstrumentTest.testSlowTempoInstruments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testSlowTempoInstruments&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MusicalInstrumentTest.testTrumpet" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -128,6 +159,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.MusicalInstrumentTest" />
+        <item itemvalue="Gradle.MusicalInstrumentTest.testSlowTempoInstruments" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testHighVolumeInstruments" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testTrumpet" />
       </list>
@@ -219,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700685436838</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="implementato highVolumeInstrument">
+      <created>1700769520367</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1700769520367</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +284,7 @@
     <MESSAGE value="REFACTORING: ripensati i contratti per nullability" />
     <MESSAGE value="aggiunto test orchestra di orchestra che funziona ricorsivamente come mi aspettavo" />
     <MESSAGE value="merged the branch compositePattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="merged the branch compositePattern" />
+    <MESSAGE value="implementato highVolumeInstrument" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementato highVolumeInstrument" />
   </component>
 </project>

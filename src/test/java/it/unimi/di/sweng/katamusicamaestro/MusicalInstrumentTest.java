@@ -86,4 +86,12 @@ public class MusicalInstrumentTest {
         assertThat(SUT.play()).isEqualTo("ABCD");
     }
 
+    @Test
+    void testSlowTempoInstruments(){
+        MusicalInstrument instrument = mock(MusicalInstrument.class);
+        when(instrument.play()).thenReturn("Abcedi");
+        MusicalInstrument SUT =  new SlowTempoMusicalInstrument(instrument);
+        assertThat(SUT.play()).isEqualTo("AAbceedii");
+    }
+
 }
