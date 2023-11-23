@@ -2,6 +2,8 @@ package it.unimi.di.sweng.katamusicamaestro;
 
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 public class MusicalInstrumentTest {
 
@@ -74,6 +76,14 @@ public class MusicalInstrumentTest {
         other.add(new WaterGlassMusicalInstrument());
         SUT.add(other);
         assertThat(SUT.play()).isEqualTo("papapa\npepepe\ndiding");
+    }
+
+    @Test
+    void testHighVolumeInstruments(){
+        MusicalInstrument instrument = mock(MusicalInstrument.class);
+        when(instrument.play()).thenReturn("aBcd");
+        MusicalInstrument SUT =  new HighVolumeMusicalInstrument(instrument);
+        assertThat(SUT.play()).isEqualTo("ABCD");
     }
 
 }

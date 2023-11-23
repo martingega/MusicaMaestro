@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="" />
+    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="merged the branch compositePattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/HighVolumeMusicalInstrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,14 +20,118 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2YXkyl6ZEWMZcNsADuT3rNcbZDG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="it.unimi.di.sweng.katamusicamaestro" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.MusicalInstrumentTest">
+    <configuration name="MusicalInstrumentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MusicalInstrumentTest.testHighVolumeInstruments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testHighVolumeInstruments&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MusicalInstrumentTest.testTrumpet" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testTrumpet&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.MusicalInstrumentTest" />
+        <item itemvalue="Gradle.MusicalInstrumentTest.testHighVolumeInstruments" />
+        <item itemvalue="Gradle.MusicalInstrumentTest.testTrumpet" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -33,6 +142,84 @@
       <option name="presentableId" value="Default" />
       <updated>1700679571034</updated>
     </task>
+    <task id="LOCAL-00001" summary="aggiunto le dipendenze assertj e mockito nel build gradle, implementato anche trumpet">
+      <created>1700680819352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700680819353</updated>
+    </task>
+    <task id="LOCAL-00002" summary="implementato horn">
+      <created>1700681037340</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700681037340</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implementato waterGlass">
+      <created>1700681333165</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700681333165</updated>
+    </task>
+    <task id="LOCAL-00004" summary="implementato ironRod">
+      <created>1700681487788</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700681487788</updated>
+    </task>
+    <task id="LOCAL-00005" summary="implementato adapter pattern per WaterGlass">
+      <created>1700681928779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700681928779</updated>
+    </task>
+    <task id="LOCAL-00006" summary="implementato adapter pattern per ironRod">
+      <created>1700682462259</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1700682462260</updated>
+    </task>
+    <task id="LOCAL-00007" summary="implementato adapter pattern per ironRod">
+      <created>1700682754529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1700682754529</updated>
+    </task>
+    <task id="LOCAL-00008" summary="implementato orchestra">
+      <created>1700684256259</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700684256259</updated>
+    </task>
+    <task id="LOCAL-00009" summary="implementato orchestra vuota">
+      <created>1700684420414</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700684420414</updated>
+    </task>
+    <task id="LOCAL-00010" summary="REFACTORING: ripensati i contratti per nullability">
+      <created>1700684731277</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1700684731277</updated>
+    </task>
+    <task id="LOCAL-00011" summary="aggiunto test orchestra di orchestra che funziona ricorsivamente come mi aspettavo">
+      <created>1700685436838</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700685436838</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -45,5 +232,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="aggiunto le dipendenze assertj e mockito nel build gradle, implementato anche trumpet" />
+    <MESSAGE value="implementato horn" />
+    <MESSAGE value="implementato waterGlass" />
+    <MESSAGE value="implementato ironRod" />
+    <MESSAGE value="implementato adapter pattern per WaterGlass" />
+    <MESSAGE value="implementato adapter pattern per ironRod" />
+    <MESSAGE value="implementato orchestra" />
+    <MESSAGE value="implementato orchestra vuota" />
+    <MESSAGE value="REFACTORING: ripensati i contratti per nullability" />
+    <MESSAGE value="aggiunto test orchestra di orchestra che funziona ricorsivamente come mi aspettavo" />
+    <MESSAGE value="merged the branch compositePattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="merged the branch compositePattern" />
   </component>
 </project>
