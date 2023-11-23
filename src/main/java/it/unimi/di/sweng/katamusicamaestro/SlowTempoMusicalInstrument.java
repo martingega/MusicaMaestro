@@ -2,18 +2,16 @@ package it.unimi.di.sweng.katamusicamaestro;
 
 import org.jetbrains.annotations.NotNull;
 
-public class SlowTempoMusicalInstrument implements MusicalInstrument {
+public class SlowTempoMusicalInstrument extends DecoratorMusicalInstrument implements MusicalInstrument {
 
-    private final MusicalInstrument instrument;
 
-    public SlowTempoMusicalInstrument(MusicalInstrument instrument) {
-        this.instrument = instrument;
+    public SlowTempoMusicalInstrument(@NotNull MusicalInstrument instrument) {
+        super(instrument);
     }
 
     @Override
-    public @NotNull String play() {
+    @NotNull String specificDecoration(@NotNull String original){
         StringBuilder ret = new StringBuilder();
-        String original = instrument.play();
         String VOWELS = "AEIOUaeiou";
         for(String s : original.split("")){
             ret.append(s);

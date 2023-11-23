@@ -2,19 +2,16 @@ package it.unimi.di.sweng.katamusicamaestro;
 
 import org.jetbrains.annotations.NotNull;
 
-public class HighVolumeMusicalInstrument implements MusicalInstrument {
+public class HighVolumeMusicalInstrument extends DecoratorMusicalInstrument implements MusicalInstrument {
 
-    private final MusicalInstrument instrument;
 
-    public HighVolumeMusicalInstrument(MusicalInstrument instrument) {
-        this.instrument = instrument;
+    public HighVolumeMusicalInstrument(@NotNull MusicalInstrument instrument) {
+        super(instrument);
     }
 
     @Override
-    public @NotNull String play() {
-        String ret = instrument.play();
-        ret = ret.toUpperCase();
-        return ret;
+    @NotNull String specificDecoration(@NotNull String original){
+        return original.toUpperCase();
     }
 
 }

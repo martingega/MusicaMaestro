@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="implementato highVolumeInstrument">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/SlowTempoMusicalInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" afterDir="false" />
+    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="REFACTORING: fattorizzata con template pattern la parte comune dei decorator">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/DecoratorMusicalInstrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/HighVolumeMusicalInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/HighVolumeMusicalInstrument.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/SlowTempoMusicalInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/SlowTempoMusicalInstrument.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -258,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700769520367</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="implementato slowTempoInstrument">
+      <created>1700770087433</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700770087434</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -285,6 +294,8 @@
     <MESSAGE value="aggiunto test orchestra di orchestra che funziona ricorsivamente come mi aspettavo" />
     <MESSAGE value="merged the branch compositePattern" />
     <MESSAGE value="implementato highVolumeInstrument" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementato highVolumeInstrument" />
+    <MESSAGE value="implementato slowTempoInstrument" />
+    <MESSAGE value="REFACTORING: fattorizzata con template pattern la parte comune dei decorator" />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: fattorizzata con template pattern la parte comune dei decorator" />
   </component>
 </project>
