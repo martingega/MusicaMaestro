@@ -94,4 +94,11 @@ public class MusicalInstrumentTest {
         assertThat(SUT.play()).isEqualTo("AAbceedii");
     }
 
+    @Test
+    void testHighVolumeFactory(){
+        InstrumentFactory factory = new HighVolumeInstrumentFactory();
+        MusicalInstrument i1 = factory.createTrumpet();
+        assertThat(i1.play()).isEqualTo("PEPEPE");
+    }
+
 }
