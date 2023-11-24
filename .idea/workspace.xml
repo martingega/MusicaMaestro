@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="implementato abstract factory per SlowTempoInstrumentFactory" />
+    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="implementato Observable di Trumpet">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/MusicCritic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/unimi/di/sweng/katamusicamaestro/MusicalInstrumentTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +57,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -63,7 +69,7 @@
       <recent name="it.unimi.di.sweng.katamusicamaestro" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MusicalInstrumentTest.testSlowTempoOrchestraFactory">
+  <component name="RunManager" selected="Gradle.MusicalInstrumentTest">
     <configuration name="MusicalInstrumentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -87,7 +93,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MusicalInstrumentTest.testHighVolumeInstruments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MusicalInstrumentTest.testObservable" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -100,7 +106,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testHighVolumeInstruments&quot;" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testObservable&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -181,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MusicalInstrumentTest" />
+        <item itemvalue="Gradle.MusicalInstrumentTest.testObservable" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testSlowTempoOrchestraFactory" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testPlainOrchestraFactory" />
-        <item itemvalue="Gradle.MusicalInstrumentTest" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testSlowTempoInstruments" />
-        <item itemvalue="Gradle.MusicalInstrumentTest.testHighVolumeInstruments" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +337,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700851886861</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="implementato abstract factory per SlowTempoInstrumentFactory">
+      <created>1700851982445</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1700851982445</updated>
+    </task>
+    <task id="LOCAL-00021" summary="implementato Observable di Trumpet">
+      <created>1700853926076</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1700853926076</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -364,6 +384,7 @@
     <MESSAGE value="implementato abstract factory per tutti gli altri strumenti" />
     <MESSAGE value="implementato abstract factory per PlainInstrumentFactory" />
     <MESSAGE value="implementato abstract factory per SlowTempoInstrumentFactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementato abstract factory per SlowTempoInstrumentFactory" />
+    <MESSAGE value="implementato Observable di Trumpet" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementato Observable di Trumpet" />
   </component>
 </project>

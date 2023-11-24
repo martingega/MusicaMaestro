@@ -1,10 +1,8 @@
 package it.unimi.di.sweng.katamusicamaestro;
 
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class MusicalInstrumentTest {
 
@@ -135,5 +133,44 @@ public class MusicalInstrumentTest {
         assertThat(orchestra.play()).isEqualTo("peepeepee\npaapaapaa\ndiidiing\ntaataang");
     }
 
+    @Test
+    void testObservable(){
+        ObservableMusicalInstrument SUT = new ObservableMusicalInstrument(new Trumpet());
+        Observer<String> vicino = mock(Observer.class);
+        SUT.register(vicino);
+        SUT.play();
+        verify(vicino).update("Trumpet");
+    }
+
+    @Test
+    void testObserver(){
+        MusicCritic SUT = new MusicCritic();
+        ObservableMusicalInstrument instrument = new ObservableMusicalInstrument(new Trumpet());
+        instrument.register(SUT);
+        instrument.play();
+        instrument.play();
+        assertThat(SUT.tellMe()).isEqualTo("Trumpet:2");
+    }
+
+    @Test
+    void testObserverWithMoreInstruments(){
+        MusicCritic SUT = new MusicCritic();
+        ObservableMusicalInstrument instrument1 = new ObservableMusicalInstrument(new Trumpet());
+        ObservableMusicalInstrument instrument2 = new ObservableMusicalInstrument(new Horn());
+        ObservableMusicalInstrument instrument3 = new ObservableMusicalInstrument(new WaterGlassMusicalInstrument());
+
+        instrument1.register(SUT);
+        instrument2.register(SUT);
+        instrument3.register(SUT);
+
+        instrument1.play();
+        instrument2.play();
+        instrument3.play();
+        instrument2.play();
+        instrument2.play();
+        instrument3.play();
+
+        assertThat(SUT.tellMe()).isEqualTo("Horn:3\nTrumpet:1\nWaterGlassMusicalInstrument:2");
+    }
 
 }
