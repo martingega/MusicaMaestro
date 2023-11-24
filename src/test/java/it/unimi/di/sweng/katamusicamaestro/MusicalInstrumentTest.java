@@ -1,10 +1,8 @@
 package it.unimi.di.sweng.katamusicamaestro;
 
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class MusicalInstrumentTest {
 
@@ -135,5 +133,13 @@ public class MusicalInstrumentTest {
         assertThat(orchestra.play()).isEqualTo("peepeepee\npaapaapaa\ndiidiing\ntaataang");
     }
 
+    @Test
+    void testObservable(){
+        ObservableMusicalInstrument SUT = new ObservableMusicalInstrument(new Trumpet());
+        Observer<String> vicino = mock(Observer.class);
+        SUT.register(vicino);
+        SUT.play();
+        verify(vicino).update("Trumpet");
+    }
 
 }
