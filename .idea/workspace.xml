@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="implementato abstract factory per tutti gli altri strumenti">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/PlainInstrumentFactory.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="implementato abstract factory per SlowTempoInstrumentFactory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +63,7 @@
       <recent name="it.unimi.di.sweng.katamusicamaestro" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MusicalInstrumentTest.testPlainOrchestraFactory">
+  <component name="RunManager" selected="Gradle.MusicalInstrumentTest.testSlowTempoOrchestraFactory">
     <configuration name="MusicalInstrumentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -158,7 +156,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MusicalInstrumentTest.testTrumpet" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MusicalInstrumentTest.testSlowTempoOrchestraFactory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -171,7 +169,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testTrumpet&quot;" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testSlowTempoOrchestraFactory&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -183,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MusicalInstrumentTest.testSlowTempoOrchestraFactory" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testPlainOrchestraFactory" />
         <item itemvalue="Gradle.MusicalInstrumentTest" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testSlowTempoInstruments" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testHighVolumeInstruments" />
-        <item itemvalue="Gradle.MusicalInstrumentTest.testTrumpet" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +317,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700851234289</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="implementato abstract factory per PlainInstrumentFactory">
+      <created>1700851726269</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1700851726269</updated>
+    </task>
+    <task id="LOCAL-00019" summary="implementato abstract factory per SlowTempoInstrumentFactory">
+      <created>1700851886861</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700851886861</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,6 +362,8 @@
     <MESSAGE value="REFACTORING: fattorizzata con template pattern la parte comune dei decorator" />
     <MESSAGE value="implementato abstract factory per trumpet" />
     <MESSAGE value="implementato abstract factory per tutti gli altri strumenti" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementato abstract factory per tutti gli altri strumenti" />
+    <MESSAGE value="implementato abstract factory per PlainInstrumentFactory" />
+    <MESSAGE value="implementato abstract factory per SlowTempoInstrumentFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementato abstract factory per SlowTempoInstrumentFactory" />
   </component>
 </project>
