@@ -113,4 +113,15 @@ public class MusicalInstrumentTest {
         assertThat(orchestra.play()).isEqualTo("PEPEPE\nPAPAPA\nDIDING\nTATANG");
     }
 
+    @Test
+    void testPlainOrchestraFactory(){
+        InstrumentFactory factory = new PlainInstrumentFactory();
+        Orchestra orchestra = new Orchestra();
+        orchestra.add(factory.createTrumpet());
+        orchestra.add(factory.createHorn());
+        orchestra.add(factory.createWaterGlass());
+        orchestra.add(factory.createIronRod());
+        assertThat(orchestra.play()).isEqualTo("pepepe\npapapa\ndiding\ntatang");
+    }
+
 }
