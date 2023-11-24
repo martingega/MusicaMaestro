@@ -142,4 +142,35 @@ public class MusicalInstrumentTest {
         verify(vicino).update("Trumpet");
     }
 
+    @Test
+    void testObserver(){
+        MusicCritic SUT = new MusicCritic();
+        ObservableMusicalInstrument instrument = new ObservableMusicalInstrument(new Trumpet());
+        instrument.register(SUT);
+        instrument.play();
+        instrument.play();
+        assertThat(SUT.tellMe()).isEqualTo("Trumpet:2");
+    }
+
+    @Test
+    void testObserverWithMoreInstruments(){
+        MusicCritic SUT = new MusicCritic();
+        ObservableMusicalInstrument instrument1 = new ObservableMusicalInstrument(new Trumpet());
+        ObservableMusicalInstrument instrument2 = new ObservableMusicalInstrument(new Horn());
+        ObservableMusicalInstrument instrument3 = new ObservableMusicalInstrument(new WaterGlassMusicalInstrument());
+
+        instrument1.register(SUT);
+        instrument2.register(SUT);
+        instrument3.register(SUT);
+
+        instrument1.play();
+        instrument2.play();
+        instrument3.play();
+        instrument2.play();
+        instrument2.play();
+        instrument3.play();
+
+        assertThat(SUT.tellMe()).isEqualTo("Horn:3\nTrumpet:1\nWaterGlassMusicalInstrument:2");
+    }
+
 }
