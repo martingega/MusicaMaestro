@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="REFACTORING: fattorizzata con template pattern la parte comune dei decorator">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/DecoratorMusicalInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/HighVolumeMusicalInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/HighVolumeMusicalInstrument.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/SlowTempoMusicalInstrument.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/unimi/di/sweng/katamusicamaestro/SlowTempoMusicalInstrument.java" afterDir="false" />
-    </list>
+    <list default="true" id="f7d590c7-0d0c-45c2-b93f-d998dfe55c2e" name="Changes" comment="implementato abstract factory per SlowTempoInstrumentFactory" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,17 +50,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.unimi.di.sweng.katamusicamaestro" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MusicalInstrumentTest">
+  <component name="RunManager" selected="Gradle.MusicalInstrumentTest.testSlowTempoOrchestraFactory">
     <configuration name="MusicalInstrumentTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,6 +110,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="MusicalInstrumentTest.testPlainOrchestraFactory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testPlainOrchestraFactory&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="MusicalInstrumentTest.testSlowTempoInstruments" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -135,7 +156,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="MusicalInstrumentTest.testTrumpet" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MusicalInstrumentTest.testSlowTempoOrchestraFactory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -148,7 +169,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testTrumpet&quot;" />
+            <option value="&quot;it.unimi.di.sweng.katamusicamaestro.MusicalInstrumentTest.testSlowTempoOrchestraFactory&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -160,10 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MusicalInstrumentTest.testSlowTempoOrchestraFactory" />
+        <item itemvalue="Gradle.MusicalInstrumentTest.testPlainOrchestraFactory" />
         <item itemvalue="Gradle.MusicalInstrumentTest" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testSlowTempoInstruments" />
         <item itemvalue="Gradle.MusicalInstrumentTest.testHighVolumeInstruments" />
-        <item itemvalue="Gradle.MusicalInstrumentTest.testTrumpet" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +289,49 @@
       <option name="project" value="LOCAL" />
       <updated>1700770087434</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="REFACTORING: fattorizzata con template pattern la parte comune dei decorator">
+      <created>1700773385792</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700773385792</updated>
+    </task>
+    <task id="LOCAL-00015" summary="REFACTORING: fattorizzata con template pattern la parte comune dei decorator">
+      <created>1700773642135</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1700773642135</updated>
+    </task>
+    <task id="LOCAL-00016" summary="implementato abstract factory per trumpet">
+      <created>1700850711529</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1700850711529</updated>
+    </task>
+    <task id="LOCAL-00017" summary="implementato abstract factory per tutti gli altri strumenti">
+      <created>1700851234289</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1700851234289</updated>
+    </task>
+    <task id="LOCAL-00018" summary="implementato abstract factory per PlainInstrumentFactory">
+      <created>1700851726269</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1700851726269</updated>
+    </task>
+    <task id="LOCAL-00019" summary="implementato abstract factory per SlowTempoInstrumentFactory">
+      <created>1700851886861</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1700851886861</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,6 +360,10 @@
     <MESSAGE value="implementato highVolumeInstrument" />
     <MESSAGE value="implementato slowTempoInstrument" />
     <MESSAGE value="REFACTORING: fattorizzata con template pattern la parte comune dei decorator" />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: fattorizzata con template pattern la parte comune dei decorator" />
+    <MESSAGE value="implementato abstract factory per trumpet" />
+    <MESSAGE value="implementato abstract factory per tutti gli altri strumenti" />
+    <MESSAGE value="implementato abstract factory per PlainInstrumentFactory" />
+    <MESSAGE value="implementato abstract factory per SlowTempoInstrumentFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementato abstract factory per SlowTempoInstrumentFactory" />
   </component>
 </project>

@@ -1,6 +1,7 @@
 package it.unimi.di.sweng.katamusicamaestro;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
@@ -93,5 +94,46 @@ public class MusicalInstrumentTest {
         MusicalInstrument SUT =  new SlowTempoMusicalInstrument(instrument);
         assertThat(SUT.play()).isEqualTo("AAbceedii");
     }
+
+    @Test
+    void testHighVolumeFactory(){
+        InstrumentFactory factory = new HighVolumeInstrumentFactory();
+        MusicalInstrument i1 = factory.createTrumpet();
+        assertThat(i1.play()).isEqualTo("PEPEPE");
+    }
+
+    @Test
+    void testHighVolumeOrchestra(){
+        InstrumentFactory factory = new HighVolumeInstrumentFactory();
+        Orchestra orchestra = new Orchestra();
+        orchestra.add(factory.createTrumpet());
+        orchestra.add(factory.createHorn());
+        orchestra.add(factory.createWaterGlass());
+        orchestra.add(factory.createIronRod());
+        assertThat(orchestra.play()).isEqualTo("PEPEPE\nPAPAPA\nDIDING\nTATANG");
+    }
+
+    @Test
+    void testPlainOrchestraFactory(){
+        InstrumentFactory factory = new PlainInstrumentFactory();
+        Orchestra orchestra = new Orchestra();
+        orchestra.add(factory.createTrumpet());
+        orchestra.add(factory.createHorn());
+        orchestra.add(factory.createWaterGlass());
+        orchestra.add(factory.createIronRod());
+        assertThat(orchestra.play()).isEqualTo("pepepe\npapapa\ndiding\ntatang");
+    }
+
+    @Test
+    void testSlowTempoOrchestraFactory(){
+        InstrumentFactory factory = new SlowTempoInstrumentFactory();
+        Orchestra orchestra = new Orchestra();
+        orchestra.add(factory.createTrumpet());
+        orchestra.add(factory.createHorn());
+        orchestra.add(factory.createWaterGlass());
+        orchestra.add(factory.createIronRod());
+        assertThat(orchestra.play()).isEqualTo("peepeepee\npaapaapaa\ndiidiing\ntaataang");
+    }
+
 
 }
